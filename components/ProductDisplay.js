@@ -55,9 +55,8 @@ app.component('product-display',
 
       <!-- Remove from cart -->
         <button class="button" 
-            v-on:click = "addToCart()" 
-            :disabled = "!inStock" 
-            :class="{disabledButton : !inStock}">
+        v-on:click = "removeFromCart()"
+        >
             Remove from Cart
         </button>
 
